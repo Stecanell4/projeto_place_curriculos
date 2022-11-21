@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place 〡 Cadastro de Empresa</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/template_cadastro_empresa.css">
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menu_mobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                }else{
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+        </script>
+</head>
+<body>
+    <header id="">
+        <div class="container">
+            <div class="logo">
+                <a href=""> <img src="assets/imagens/logo.png"> </a>
+            </div>
+            <div class="menu">
+                <nav>  <!-- usar no menu-->
+                    <div class="menu_mobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+                    <ul>
+                        <li><a href="../Novo_Projeto_Site/index.html">Home</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Home</a></li>
+                        <li class="entrarUsuarios"><a href="">Para Candidatos</a></li>
+                        <li class="active"><a href="">Para Empresas</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="banner_headline">
+                <div class="img_cadastro_empresa">
+                    <img src="assets/imagens/banner_cadastro_empresa.jpg">
+                </div>
+                <div class="formulario_cadastro_empresa">
+                    <form class="form_empresa" method="post">
+                        <h1>Cadastre sua Empresa</h1>
+                        <div class="form_colab_empresa">
+                            <div class="field">
+                                <label for="nome_colaborador">Nome da Empresa:</label>
+                                <input type="text" name="nome_colaborador" id="nomeid" placeholder="Ex: Brasil LTDA" required="required">
+                            </div>
+                            <div class="field">
+                                <label for="cnpj">CNPJ:</label>
+                                <input type="text" name="cnpj_empresa" id="cnpjid" placeholder="Ex: XX.XXX.XXX/0001-XX" required="required">
+                            </div>
+                            <div class="field">
+                                <label for="email_empresa" class="email_empresa">E-mail:</label>
+                                <input type="email" name="email_empresa" id="email_empresaid" placeholder="Ex: administrativo@empresa.com.br" required="required">
+                            </div>
+                            <div class="field">
+                                <label for="telefone_empresa">Telefone:</label>
+                                <input type="tel" name="telefone_empresa" id="telefone_empresaid" placeholder="Ex: (46)3433-0606" required="required">
+                            </div>
+                            <div class="field">
+                                <label for="endereco_empresa">Endereço:</label>
+                                <input type="text" name="endereco_empresa" id="endereco_empresaid" placeholder="Ex: Rua: Getulio Vargas - Nº 2350">
+                            </div>
+                            <div class="field">
+                                <label for="cidade_empresa">Cidade:</label>
+                                <input type="text" name="cidade_empresa" id="cidade_empresaid" placeholder="Ex: Palmas" required="required">
+                            </div>
+                            <div class="estado_empresa">
+                                <label for="estado_empresa">Estado:</label>
+                                <select id="estado" name="estado">
+                                    <option value="">Selecione o estado</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                    <option value="EX">Estrangeiro</option>
+                                </select>
+                            </div>   
+                            <div class="field">
+                                <label for="descricao_empresa">Descrição da Empresa:</label>
+                                <textarea placeholder="Deixe aqui uma breve descrição da sua empresa."></textarea>
+                            </div>
+                            <div class="area_atuacao">
+                                <label for="area_atuacao">Área de Atuação:</label>
+                                <select name="atuacao" id="area_atuacaoid">
+                                    <option value="">Selecione uma opção.</option>
+                                    <option value="">Alimentos e Bebidas</option>
+                                    <option value="">Arte e Antiguidades</option>
+                                    <option value="">Artigos Religiosos</option>
+                                    <option value="">Assinaturas e Revistas</option>
+                                    <option value="">Automóveis e Veículos</option>
+                                    <option value="">Bebês e Cia</option>
+                                    <option value="">Blu-Ray</option>
+                                    <option value="">Brindes / Materiais Promocionais</option>
+                                    <option value="">Brinquedos e Games</option>
+                                    <option value="">Casa e Decoração</option>
+                                    <option value="">CDs</option>
+                                    <option value="">Colecionáveis</option>
+                                    <option value="">Compras Coletivas</option>
+                                    <option value="">Construção e Ferramentas</option>
+                                    <option value="">Cosméticos e Perfumaria</option>
+                                    <option value="">Cursos e Educação</option>
+                                    <option value="">Discos de Vinil</option>
+                                    <option value="">DVDs</option>
+                                    <option value="">Eletrodomésticos</option>
+                                    <option value="">Eletrônicos</option>
+                                    <option value="">Emissora de Rádio</option>
+                                    <option value="">Emissora de Televisão</option>
+                                    <option value="">Empregos</option>
+                                    <option value="">Empresa de Telemarketing</option>
+                                    <option value="">Esporte e Lazer</option>
+                                    <option value="">Flores, Cestas e Presentes</option>
+                                    <option value="">Fotografia</option>
+                                    <option value="">Igrejas / Templos / Instituições Religiosas</option>
+                                    <option value="">Indústria, Comércio e Negócios</option>
+                                    <option value="">Informática</option>
+                                    <option value="">Ingressos</option>
+                                    <option value="">Instrumentos Musicais</option>
+                                    <option value="">Joalheria</option>
+                                    <option value="">Lazer</option>
+                                    <option value="">Livros</option>
+                                    <option value="">Moda e Acessórios</option>
+                                    <option value="">Hotéis/Motéis</option>
+                                    <option value="">Negócios e Oportunidades</option>
+                                    <option value="">Outros Serviços</option>
+                                    <option value="">Papelaria e Escritório</option>
+                                    <option value="">Pet Shop</option>
+                                    <option value="">Saúde</option>
+                                    <option value="">Serviço Advocaticios</option>
+                                    <option value="">Serviço de Distribuição de Jornais / Revistas</option>
+                                    <option value="">Serviços Administrativos</option>
+                                    <option value="">Serviços Artísticos</option>
+                                    <option value="">Serviços de Abatedouros / Matadouros</option>
+                                    <option value="">Serviços de Aeroportos</option>
+                                    <option value="">Serviços de Agências</option>
+                                    <option value="">Serviços de Aluguel / Locação</option>
+                                    <option value="">Serviços de Armazenagem</option>
+                                    <option value="">Serviços de Assessorias</option>
+                                    <option value="">Serviços de Assistência Técnica / Instalações</option>
+                                    <option value="">Serviços de Associações</option>
+                                    <option value="">Serviços de Bancos de Sangue</option>
+                                    <option value="">Serviços de Bibliotecas</option>
+                                    <option value="">Serviços de Cartórios</option>
+                                    <option value="">Serviços de Casas Lotéricas</option>
+                                    <option value="">Serviços de Confecções</option>
+                                    <option value="">Serviços de Consórcios</option>
+                                    <option value="">Serviços de Consultorias</option>
+                                    <option value="">Serviços de Cooperativas</option>
+                                    <option value="">Serviços de Despachante</option>
+                                    <option value="">Serviços de Engenharia</option>
+                                    <option value="">Serviços de Estacionamentos</option>
+                                    <option value="">Serviços de Estaleiros</option>
+                                    <option value="">Serviços de Exportação / Importação</option>
+                                    <option value="">Serviços de Geólogos</option>
+                                    <option value="">Serviços de joalheiros</option>
+                                    <option value="">Serviços de Leiloeiros</option>
+                                    <option value="">Serviços de limpeza</option>
+                                    <option value="">Serviços de Loja de Conveniência</option>
+                                    <option value="">Serviços de Mão de Obra</option>
+                                    <option value="">Serviços de Órgão Públicos</option>
+                                    <option value="">Serviços de Pesquisas</option>
+                                    <option value="">Serviços de Portos</option>
+                                    <option value="">Serviços de Saúde / Bem Estar</option>
+                                    <option value="">Serviços de Seguradoras</option>
+                                    <option value="">Serviços de Segurança</option>
+                                    <option value="">Serviços de Sinalização</option>
+                                    <option value="">Serviços de Sindicatos / Federações</option>
+                                    <option value="">Serviços de Traduções</option>
+                                    <option value="">Serviços de Transporte</option>
+                                    <option value="">Serviços de Utilidade Pública</option>
+                                    <option value="">Serviços em Agricultura / Pecuária / Piscicultura</option>
+                                    <option value="">Serviços em Alimentação</option>
+                                    <option value="">Serviços em Arte</option>
+                                    <option value="">Serviços em Cine / Foto / Som</option>
+                                    <option value="">Serviços em Comunicação</option>
+                                    <option value="">Serviços em Construção</option>
+                                    <option value="">Serviços em Ecologia / Meio Ambiente</option>
+                                    <option value="">Serviços em Eletroeletrônica / Metal Mecânica</option>
+                                    <option value="">Serviços em Festas / Eventos</option>
+                                    <option value="">Serviços em Informática</option>
+                                    <option value="">Serviços em Internet</option>
+                                    <option value="">Serviços em Jóias / Relógios / Óticas</option>
+                                    <option value="">Serviços em Telefonia</option>
+                                    <option value="">Serviços em Veículos</option>
+                                    <option value="">Serviços Esotéricos / Místicos</option>
+                                    <option value="">Serviços Financeiros</option>
+                                    <option value="">Serviços Gerais</option>
+                                    <option value="">Serviços Funerários</option>
+                                    <option value="">Serviços Gráficos / Editoriais</option>
+                                    <option value="">Serviços para Deficientes</option>
+                                    <option value="">Serviços para Animais</option>
+                                    <option value="">Serviços para Escritórios</option>
+                                    <option value="">Serviços para Roupas</option>
+                                    <option value="">Serviços Socias / Assistenciais</option>
+                                    <option value="">Sex Shop</option>
+                                    <option value="">Shopping Centers</option>
+                                    <option value="">Tabacaria</option>
+                                    <option value="">Tarifas Bancárias</option>
+                                    <option value="">Tarifas Telefônicas</option>
+                                    <option value="">Telefonia</option>
+                                    <option value="">Turismo</option>
+                                </select>
+                            </div>
+                            <input type="submit" name="acao" value="Cadastrar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container flexColumn">
+            <div class="footer_menu">
+                <div class="fm_1">
+                    Sobre:
+                </div>
+                <div class="fm_2">
+                    Contato:
+                </div>
+                <!--<div class="fm_3">
+                    ***
+                </div>-->
+            </div>
+            <div class="footer_area">
+                <div class="footer_areaitem">
+                        <div class="footer_areaitem_2">
+                            <div class="social_01">
+                                <img src="assets/imagens/logo_02.png">
+                            </div>
+                            <div class="social">
+                                Projeto Desenvolvido para a faculdade de Sistemas de Informação - IFPR Palmas-PR
+                            </div>
+                        </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="contato">
+                        Telefone: (46)99999-9999
+                    </div>
+                    <div class="contato">
+                        E-mail: campus@campus.com.br
+                    </div>
+                    <div class="contato">
+                        Endereço: IFPR Campus Palmas - PR
+                    </div>
+                </div>
+                <!--<div class="footer_areaitem">
+                    <ul class="links">
+                        <li class="li_right">
+                            <a href="">Home</a>
+                        </li>
+                        <li class="li_right">
+                            <a href="">Sobre</a>
+                        </li>
+                        <li class="li_right">
+                            <a href="">Suporte</a>
+                        </li>
+                    </ul>
+                </div>-->
+            </div>
+            <div class="footer_copy">
+                © 2022 - Copyright - Todos os direitos reservados.
+            </div>
+        </footer>
+</html>

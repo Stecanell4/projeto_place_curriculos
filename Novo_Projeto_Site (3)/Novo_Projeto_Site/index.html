@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">  <!--navegador entender q é portugues-->
+<head>
+    <meta charset="UTF-8"> <!--utilizada para comunicar aos navegadores qual é o formato de codificação de caracteres utilizado naquele documento-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--é específica do navegador Internet Explorer, ela configura a página para ser renderizada como em outra versão do Internet Explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--deixa o site responsivo-->
+    <title>Place 〡 Repositório de Currículos</title>  <!--AJUSTAR O NOME-->
+    <link rel="stylesheet" type="text/css" href="assets/css/template.css">
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menu_mobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                }else{
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+        </script>
+</head>
+<body>
+    <header id="">
+        <div class="container">
+            <div class="logo">
+                <a href=""> <img src="assets/imagens/logo.png"> </a>
+            </div>
+            <div class="menu">
+                <nav>  <!-- usar no menu-->
+                    <div class="menu_mobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+                    <ul>
+                        <li class="active"><a href="../Novo_Projeto_Site/index.html">Home</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Home</a></li>
+                        <li class="entrarUsuarios"><a href="../Novo_Projeto_Site/cadastro_candidato.html">Para Candidatos</a></li>
+                        <li><a href="../Novo_Projeto_Site/cadastro_empresa.html">Para Empresas</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="banner">
+        <div class="container_column">
+            <div class="banner_headline">
+                <form class="card">
+                    <div class="card-header">
+                        <h2 class="login_h2">Login</h2>
+                    </div>
+                    <div class="card-content">
+
+                        <div class="card-content-area">
+    
+                            <label for="usuario">Usuário:</label>
+    
+                            <input type="text" id="usuario" autocomplete="on">
+    
+                        </div>
+    
+                        <div class="card-content-area">
+                            <label for="password">Senha:</label>   
+                            <input type="password" id="password" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="esqueceu">
+                        <a href="">Esqueceu a senha?</a>
+                    </div>
+                    <div class="botao_entrar">
+                        <button type="submit" formaction="https://www.google.com.br">Entrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container flexColumn">
+            <div class="footer_menu">
+                <div class="fm_1">
+                    Sobre:
+                </div>
+                <div class="fm_2">
+                    Contato:
+                </div>
+                <!--<div class="fm_3">
+                    ***
+                </div>-->
+            </div>
+            <div class="footer_area">
+                <div class="footer_areaitem">
+                        <div class="footer_areaitem_2">
+                            <div class="social_01">
+                                <img src="assets/imagens/logo_02.png">
+                            </div>
+                            <div class="social">
+                                Projeto Desenvolvido para a faculdade de Sistemas de Informação - IFPR Palmas-PR
+                            </div>
+                        </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="contato">
+                        Telefone: (46)99999-9999
+                    </div>
+                    <div class="contato">
+                        E-mail: campus@campus.com.br
+                    </div>
+                    <div class="contato">
+                        Endereço: IFPR Campus Palmas - PR
+                    </div>
+                </div>
+                <!--<div class="footer_areaitem">
+                    <ul class="links">
+                        <li class="li_right">
+                            <a href="">Home</a>
+                        </li>
+                        <li class="li_right">
+                            <a href="">Sobre</a>
+                        </li>
+                        <li class="li_right">
+                            <a href="">Suporte</a>
+                        </li>
+                    </ul>
+                </div>-->
+            </div>
+            <div class="footer_copy">
+                © 2022 - Copyright - Todos os direitos reservados.
+            </div>
+        </footer>
+</body>
+</html>

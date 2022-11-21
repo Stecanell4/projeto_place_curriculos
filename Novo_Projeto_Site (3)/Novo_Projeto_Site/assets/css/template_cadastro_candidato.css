@@ -1,0 +1,474 @@
+*{ /*deixar a fonte padrao para tudo*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;     /*padrao margin 0*/
+    padding: 0;        /*padrao padding 0*/
+}
+
+header{
+    display: flex;
+    justify-content: center;   /*alinhar no meio da tela*/
+    height: 100px;   /*altura*/
+    border-bottom:2px solid rgb(127, 127, 127);
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;  /*para ficar um ao lado do outro*/
+    width: 100%;   /*largura*/
+    /*background-color: red;*/
+}
+
+.logo{
+    display: flex;
+    align-items: center;   /*alinha o item ao centro do container*/
+    /*width: 202px;
+    height: 120px;*/
+    margin-left: 50px;
+}
+
+.logo a{
+    width: 202px;
+    height:120px ;
+}
+
+.logo a img{
+    margin-top: 20px;
+    width: 202px;
+    height: 80px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+nav ul, nav li{
+    list-style: none;  /*vai tirar os pontos*/
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul{
+    display: flex;  /*deixar um do lado do outros*/
+    margin-top: 20px;
+}
+
+nav a{
+    display: block; /* para conseguir alterar o tamanho*/
+    padding: 15px;  /*tamanho dos menus*/
+    text-decoration: none;  /*tira o sublinhado*/
+    color: #000000;
+    border:2px solid #727272;
+    border-radius: 10px;   /* arredondar a borda*/
+    margin-right: 2px;  /*distancia dos menus*/
+}
+
+nav .entrarUsuarios a, nav a:hover{   /*usa para qnd passar o nome ficar outra cor*/
+    background-color: rgb(53, 185, 238);
+    color: white;
+}
+
+.entrarUsuarios{
+    margin-left: 350px;
+}
+
+.banner_headline{
+    /*background-color: green;*/
+    width: 1350px;
+    height: 850px;
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img_cadastro_empresa{
+    width: 750px;
+}
+
+.img_cadastro_empresa img{
+    width: 650px;
+    height: 850px;
+    margin: 20px;
+}
+
+.formulario_cadastro_empresa{
+    width: 850px;
+}
+
+.field{
+    width: 100%;
+    margin: 15px 0;
+}
+
+.field label{
+    padding-left: 10px;
+    font-size: 1.1em;
+    display: block;
+    width: 100%;
+}
+
+.formulario_cadastro_empresa h1{
+    text-align: center;
+    color: black;
+}
+
+.form_colab_empresa{
+    background-color: rgba(19, 19, 19, 0.1);
+    box-shadow: 3px 5px 5px black;
+    width: 630px;
+    height: 800px;
+    border-radius: 5px;
+}
+
+input{
+    width: 90%;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+    border-color: #000066;
+    box-shadow: 5px 0px 9px #2d2d2d;
+    color: black;
+}
+
+form label {
+    margin-left: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+
+input[type=submit]{
+    display: block;
+    background-color: #ccc;
+    height: 45px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#estado{
+    height: 30px;
+    font-size: 15px ;
+    margin-left: 20px;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+.estado_empresa{
+    margin-left: 12px;
+}
+
+textarea{
+    height: 50px;
+    width: 93%;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+.area_atuacao{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+#area_atuacaoid{
+    height: 30px;
+    font-size: 15px ;
+    margin-left: 20px;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+footer{
+    background-color:#ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_menu{
+    display: flex;
+}
+
+.fm_1, .fm_2, .fm_3{
+    flex: 1;
+    background-color:rgb(53, 185, 238);
+    text-align: center;
+    color: #000000;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.fm_2{
+    background-color: rgb(53, 185, 238);
+}
+.fm_3{
+    background-color: rgb(53, 185, 238);
+}
+
+footer .contato01, .contato02, .contato03{
+    font-size: 12px;
+    border-bottom: 1px solid black;
+    /*border-radius: 10px;*/
+}
+
+.footer_area{
+    display: flex;
+    color: #000000;
+    height: 80px;
+}
+
+.footer_areaitem{
+    flex:1;
+    flex-wrap: nowrap;
+    height: 60px;
+    border-left: 1px solid black;
+}
+
+
+
+.flexColumn{
+    flex-direction: column;
+}
+
+.footer_areaitem_2{
+    display: flex;
+    justify-content: space-between;  
+}
+
+.links{
+    list-style: none;
+}
+
+ul a{
+    text-decoration: none;
+}
+
+.li_right{
+    text-align: right;
+}
+
+.links a{
+    color: #ffffff;
+}
+
+.contato{
+    text-align: center;
+    font-size: 15px;
+    margin: 5px;
+    border-bottom: 1px solid #969696;
+    padding: 1px;
+}
+
+.social{
+    margin: 5px;
+    height: 60px;
+    padding: 1px;
+    margin-top: 30px;
+    margin-right: 100px;
+}
+.social_01{
+    margin: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.social_01 img{
+    height: 60px;
+    width: 80px;
+    margin-left: 20px;
+}
+
+
+.li_right{
+    font-size: 12px;
+    margin: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000000;
+    padding: 1px;
+}
+
+.footer_copy{
+    background-color: #ffffff;
+    color: #000000;
+    border-top: 1px solid #000000;
+    
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.menu_mobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 190px;
+}
+
+.mm_line{
+    height: 2px;
+    background-color:rgb(53, 185, 238) ;
+}
+
+@media (max-width:600px){
+    .banner_headline{
+        flex-direction: column;
+    }
+    .img_cadastro_empresa{
+        display: none;
+    }
+
+    .footer_menu{
+        flex-direction: column;
+    }
+    .footer_area{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer_areaitem{
+        margin-top: 15px;
+        border-left: none;
+        margin-bottom: 20px;
+    }
+    .footer_copy{
+        margin-top: 90px;
+    }
+    header .container{
+        flex-direction: row;
+    }
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        margin-top: 0%;
+    }
+
+    nav a{
+        border: none;
+        border-radius: 0%;
+        border-bottom: 1px solid black;
+    }
+    header{
+        height: auto;
+    }
+
+    .entrarUsuarios{
+        margin-left: 0;
+    }
+    .menu_mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 20px;
+    }
+
+    .img_cadastro_empresa{
+        height: 0px;
+        width: 0px;
+    }
+    .img_cadastro_empresa img{
+        height: 1px;
+        width: 1px;
+    }
+    .form_empresa{
+        height: 800px;
+        width: 500px;
+    }
+    .form_colab_empresa{
+        height: 800px;
+        width: 500px;
+    }
+    .formulario_cadastro_empresa{
+        height: 800px;
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 650px)and(max-device-width:1024px){ 
+    .entrarUsuarios{
+        margin-left: 40px;
+    }
+    .footer_copy{
+        margin-top: 10px;
+    }
+    .img_cadastro_empresa{
+        width: 450px;
+    }
+    .img_cadastro_empresa img{
+        width: 450px;
+    }
+    .formulario_cadastro_empresa{
+        width: 450px;
+    }
+    .form_colab_empresa{
+        width: 449px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px){ 
+    .entrarUsuarios{
+        margin-left: 250px;
+    }
+    .footer_copy{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1650px){ 
+    .entrarUsuarios{
+        margin-left: 320px;
+    }
+    .footer_copy{
+        margin-top: 10px;
+    }
+    .menu{
+        margin-bottom: 10px;
+    }
+    .formulario_cadastro_empresa{
+        width: 850px;
+    }
+    .form_colab_empresa{
+        width: 849px;
+    }
+}
+
+@media screen and (min-width: 1651px) and (max-width: 1999px){
+    .entrarUsuarios{
+        margin-left: 450px;
+    }
+    .menu{
+        margin-bottom: 10px;
+    }
+    .img_cadastro_empresa{
+        width: 800px;
+    }
+    .img_cadastro_empresa img{
+        width: 800px;
+    }
+    .formulario_cadastro_empresa{
+        width: 800px;
+    }
+    .form_colab_empresa{
+        width: 800px;
+        margin-left: 50px;
+    }
+}

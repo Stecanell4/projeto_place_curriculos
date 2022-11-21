@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place 〡 Cadastro de Candidato</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/template_cadastro_candidato.css">
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menu_mobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                }else{
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+        </script>
+</head>
+<body>
+    <header id="">
+        <div class="container">
+            <div class="logo">
+                <a href=""> <img src="assets/imagens/logo.png"> </a>
+            </div>
+            <div class="menu">
+                <nav>  <!-- usar no menu-->
+                    <div class="menu_mobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+                    <ul>
+                        <li><a href="../Novo_Projeto_Site/index.html">Home</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Home</a></li>
+                        <li class="entrarUsuarios"><a href="../Novo_Projeto_Site/cadastro_candidato.html">Para Candidatos</a></li>
+                        <li class="active"><a href="../Novo_Projeto_Site/cadastro_empresa.html">Para Empresas</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="banner_headline">
+                <div class="img_cadastro_empresa">
+                    <img src="assets/imagens/banner_cadastro_empresa.jpg">
+                </div>
+                <div class="formulario_cadastro_empresa">
+                    <form class="form_empresa" method="post">
+                        <h1>Cadastre-se</h1>
+                        <div class="form_colab_empresa">
+                            <div class="field">
+                                <label for="nome_colaborador">Nome:</label>
+                                <input type="text" name="nome_colaborador" id="nomeid" placeholder="Ex: Lucas Santos" required="required">
+                            </div>
+                            <div class="field">
+                                <label for="cnpj">CPF:</label>
+                                <input type="text" name="cnpj_empresa" id="cnpjid" placeholder="Ex: XXX.XXX.XXX-XX" required="required">
+                            </div>
+                            <div class="field">
+                                <label for="email_empresa" class="email_empresa">E-mail:</label>
+                                <input type="email" name="email_empresa" id="email_empresaid" placeholder="Ex: lucas@gmail.com" required="required">
+                            </div>
+                            <div class="field">
+                                <label for="telefone_empresa">Telefone:</label>
+                                <input type="tel" name="telefone_empresa" id="telefone_empresaid" placeholder="Ex: (46)9898-9898" required="required">
+                            </div>
+                            <div class="field">
+                                <label for="endereco_empresa">Endereço:</label>
+                                <input type="text" name="endereco_empresa" id="endereco_empresaid" placeholder="Ex: Rua: Getulio Vargas - Nº 2350">
+                            </div>
+                            <div class="field">
+                                <label for="cidade_empresa">Cidade:</label>
+                                <input type="text" name="cidade_empresa" id="cidade_empresaid" placeholder="Ex: Palmas" required="required">
+                            </div>
+                            <div class="estado_empresa">
+                                <label for="estado_empresa">Estado:</label>
+                                <select id="estado" name="estado">
+                                    <option value="">Selecione o estado</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                    <option value="EX">Estrangeiro</option>
+                                </select>
+                            </div>   
+                            <div class="area_atuacao">
+                                <label for="area_atuacao">Área de Interesse:</label>
+                                <select name="atuacao" id="area_atuacaoid">
+                                    <option value="">Selecione uma opção.</option>
+                                    <option value="agronomia">Agronomia</option>
+                                    <option value="biotecnologia">Biotecnologia</option>
+                                    <option value="ecologia ">Ecologia </option>
+                                    <option value="eng_ambiental">Engenharia Ambiental</option>
+                                    <option value="eng_pesca">Engenharia de Pesca</option>
+                                    <option value="eng_hidrica">Engenharia Hídrica</option>
+                                    <option value="ges_ambiental">Gestão Ambiental</option>
+                                    <option value="geologia">Geologia</option>
+                                    <option value="oceanografia">Oceanografia</option>
+                                    <option value="eng_agricola">Engenharia Agrícola</option>
+                                    <option value="eng_energia">Engenharia de Energia</option>
+                                    <option value="eng_florestal">Engenharia Florestal</option>
+                                    <option value="med_vet">Medicina Veterinária</option>
+                                    <option value="meteorologia">Meteorologia</option>
+                                    <option value="zootecnia">Zootecnia</option>
+                                    <option value="bioquimica">Bioquímica</option>
+                                    <option value="biofisica">Biofísica</option>
+                                    <option value="biomedicina">Biomedicina</option>
+                                    <option value="cie_biologicas">Ciências Biológicas</option>
+                                    <option value="ed_fisica">Educação Física</option>
+                                    <option value="enfermagem">Enfermagem</option>
+                                    <option value="estetica">Estética</option>
+                                    <option value="farmacia">Farmácia</option>
+                                    <option value="fisioterapia">Fisioterapia</option>
+                                    <option value="fono">Fonoaudiologia</option>
+                                    <option value="gerontologia">Gerontologia</option>
+                                    <option value="medicina">Medicina</option>
+                                    <option value="musicoterapia">Musicoterapia</option>
+                                    <option value="nutricao">Nutrição</option>
+                                    <option value="obstetra">Obstetrícia</option>
+                                    <option value="odontologia">Odontologia</option>
+                                    <option value="quiropraxia">Quiropraxia</option>
+                                    <option value="radiologia">Radiologia</option>
+                                    <option value="saude_coletiva">Saúde Coletiva</option>
+                                    <option value="terapia">Terapia Ocupacional</option>
+                                    <option value="desenvolvimento_sistemas">Análise e Desenvolvimento de Sistemas</option>
+                                    <option value="astronomia">Astronomia</option>
+                                    <option value="cie_computacao">Ciência da Computação</option>
+                                    <option value="estatistica">Estatística</option>
+                                    <option value="fisica">Física</option>
+                                    <option value="geofisica">Geofísica</option>
+                                    <option value="geologia">Geologia</option>
+                                    <option value="inf_biomedica">Informática Biomédica</option>
+                                    <option value="matematica">Matemática</option>
+                                    <option value="meteorologia">Meteorologia</option>
+                                    <option value="nanotecnologia">Nanotecnologia</option>
+                                    <option value="oceano">Oceanografia</option>
+                                    <option value="quimica">Química</option>
+                                    <option value="sist_informacao">Sistemas de Informação</option>
+                                    <option value="eng_aero">Engenharia Aeronáutica</option>
+                                    <option value="eng_agricola">Engenharia Agrícola</option>
+                                    <option value="eng_carto">Engenharia de Agrimensura e Cartográfica</option>
+                                    <option value="eng_alimentos">Engenharia de Alimentos</option>
+                                    <option value="eng_sanitaria">Engenharia Ambiental e Sanitária</option>
+                                    <option value="eng_biomedica">Engenharia Biomédica</option>
+                                    <option value="eng_bioprocessos">Engenharia de Bioprocessos</option>
+                                    <option value="eng_civil">Engenharia Civil</option>
+                                    <option value="eng_computacao">Engenharia de Computação</option>
+                                    <option value="eng_automacao">Engenharia de Controle e Automação</option>
+                                    <option value="eng_eletrica">Engenharia Elétrica</option>
+                                    <option value="eng_eletronica">Engenharia Eletrônica</option>
+                                    <option value="eng_energia">Engenharia de Energia</option>
+                                    <option value="eng_florestal">Engenharia Florestal</option>
+                                    <option value="eng_fortifi">Engenharia de Fortificação e Construção</option>
+                                    <option value="eng_mecanica">Engenharia Mecânica</option>
+                                    <option value="eng_armamento">Engenharia Mecânica e de Armamento</option>
+                                    <option value="eng_materiais">Engenharia de Materiais</option>
+                                    <option value="eng_minas">Engenharia de Minas</option>
+                                    <option value="eng_metalurgica">Engenharia Metalúrgica</option>
+                                    <option value="eng_naval">Engenharia Naval</option>
+                                    <option value="eng_pesca">Engenharia de Pesca</option>
+                                    <option value="eng_producao">Engenharia de Produção</option>
+                                    <option value="eng_petroleo">Engenharia de Petróleo</option>
+                                    <option value="eng_quimica">Engenharia Química</option>
+                                    <option value="eng_software">Engenharia de Software</option>
+                                    <option value="eng_telecom">Engenharia de Telecomunicações</option>
+                                    <option value="antropologia">Antropologia</option>
+                                    <option value="arqueologia">Arqueologia</option>
+                                    <option value="cien_politica">Ciência Política</option>
+                                    <option value="filosofia">Filosofia</option>
+                                    <option value="geografia">Geografia</option>
+                                    <option value="historia">História</option>
+                                    <option value="psicologia">Psicologia</option>
+                                    <option value="sociologia">Sociologia</option>
+                                    <option value="teologia">Teologia</option>
+                                    <option value="administracao">Administração</option>
+                                    <option value="rec_humanos">Recursos Humanos</option>
+                                    <option value="arquivologia">Arquivologia</option>
+                                    <option value="arq_urbanismo">Arquitetura e Urbanismo</option>
+                                    <option value="biblioteconomia">Biblioteconomia</option>
+                                    <option value="cien_contabeis">Ciências Contábeis</option>
+                                    <option value="direito">Direito</option>
+                                    <option value="economia">Economia</option>
+                                    <option value="educomunicacao">Educomunicação</option>
+                                    <option value="eventos">Eventos</option>
+                                    <option value="jornalismo">Jornalismo</option>
+                                    <option value="museologia">Museologia</option>
+                                    <option value="pedagogia">Pedagogia</option>
+                                    <option value="prod_cultural">Produção Cultural</option>
+                                    <option value="prod_editorial">Produção Editorial</option>
+                                    <option value="prod_multimidia">Produção Multimídia</option>
+                                    <option value="publi_propaganda">Publicidade e Propaganda</option>
+                                    <option value="radio_tv">Rádio e TV</option>
+                                    <option value="relac_inter">Relações Internacionais</option>
+                                    <option value="relac_publi">Relações Públicas</option>
+                                    <option value="secretariado">Secretariado</option>
+                                    <option value="serv_social">Serviço Social</option>
+                                    <option value="turismo">Turismo</option>
+                                    <option value="artes_cenicas">Artes Cênicas</option>
+                                    <option value="artes_plasticas">Artes Plásticas</option>
+                                    <option value="cinema">Cinema</option>
+                                    <option value="danca">Dança</option>
+                                    <option value="design">Design</option>
+                                    <option value="design_games">Design de Games</option>
+                                    <option value="design_grafico">Design Gráfico</option>
+                                    <option value="design_moda">Design de Moda</option>
+                                    <option value="design_interiores">Design de Interiores</option>
+                                    <option value="design_produto">Design de Produto</option>
+                                    <option value="design_moda">Fotografia</option>
+                                    <option value="historia_arte">História da Arte</option>
+                                    <option value="linguistica">Linguística</option>
+                                    <option value="letras">Letras</option>
+                                    <option value="moda">Moda</option>
+                                    <option value="musica">Música</option>
+                                    <option value="teatro">Teatro</option>
+                                    <option value="traducao_interpreta">Tradução e Interpretação</option>
+                                </select>
+                            </div>
+                            <input type="submit" name="acao" value="Cadastrar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container flexColumn">
+            <div class="footer_menu">
+                <div class="fm_1">
+                    Sobre:
+                </div>
+                <div class="fm_2">
+                    Contato:
+                </div>
+                <!--<div class="fm_3">
+                    ***
+                </div>-->
+            </div>
+            <div class="footer_area">
+                <div class="footer_areaitem">
+                        <div class="footer_areaitem_2">
+                            <div class="social_01">
+                                <img src="assets/imagens/logo_02.png">
+                            </div>
+                            <div class="social">
+                                Projeto Desenvolvido para a faculdade de Sistemas de Informação - IFPR Palmas-PR
+                            </div>
+                        </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="contato">
+                        Telefone: (46)99999-9999
+                    </div>
+                    <div class="contato">
+                        E-mail: campus@campus.com.br
+                    </div>
+                    <div class="contato">
+                        Endereço: IFPR Campus Palmas - PR
+                    </div>
+                </div>
+                <!--<div class="footer_areaitem">
+                    <ul class="links">
+                        <li class="li_right">
+                            <a href="">Home</a>
+                        </li>
+                        <li class="li_right">
+                            <a href="">Sobre</a>
+                        </li>
+                        <li class="li_right">
+                            <a href="">Suporte</a>
+                        </li>
+                    </ul>
+                </div>-->
+            </div>
+            <div class="footer_copy">
+                © 2022 - Copyright - Todos os direitos reservados.
+            </div>
+        </footer>
+</html>
